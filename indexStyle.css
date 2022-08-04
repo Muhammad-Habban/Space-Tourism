@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.flex,
+.flexpart1,
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    justify-content: space-between;
+    margin-left: 70px;
+    min-height: 150px;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: 120px;
+    top: 76px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 999;
+}
+
+.flex {
+    gap: 50px;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.flexpart1 {
+    gap: 5px;
+}
+
+.flexpart1:hover {
+    /* text-decoration: underline 3px white; */
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.home {
+    border-bottom: 2px solid white;
+}
+
+.mainflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 550px;
+    align-items: flex-end;
+    animation: transit 0.75s;
+}
+
+
+/* .header {
+    position: relative;
+} */
+
+.close:hover {
+    cursor: pointer;
+}
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(81px);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+@keyframes transit {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.mainpart2 {
+    background-color: white;
+    height: 274px;
+    width: 274px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.mainpart2:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+}
+
+.space {
+    font-size: 150px;
+    margin: 0 auto;
+    color: white;
+    text-transform: uppercase;
+}
+
+.para2 {
+    max-width: 500px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #D0D6F9;
+    font-size: 18px;
+}
+
+.para1 {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    color: #D0D6F9;
+    letter-spacing: 4.72px;
+}
+
+.flex {
+    backdrop-filter: blur(81.54px);
+    padding: 1.56rem 15.6rem 1.56rem 3.75rem;
+}
+
+.ham {
+    display: none;
+}
+
+@media screen and (max-width:1366px) {
+    .mainflex {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    main {
+        max-width: 768px;
+        background-image: url(./assets/home/background-home-tablet.jpg);
+        background-size: 768px 900px;
+        min-height: 900px;
+    }
+    .line {
+        display: none;
+    }
+    .mainflex {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .mainpart1 {
+        text-align: center;
+    }
+    .flex {
+        padding: 1.56rem 2.6rem 1.56rem 3.75rem;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+@media screen and (max-width: 790px) {
+    main {
+        max-width: 375px;
+        background-image: url(./assets/home/background-home-mobile.jpg);
+        background-size: 375px 700px;
+        min-height: 700px;
+    }
+    .flex {
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
+    .ham:hover {
+        cursor: pointer;
+    }
+    .header {
+        margin: 0px 20px;
+    }
+    .sideNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .close {
+        margin: 20px 20px;
+    }
+    .flexpart1 {
+        margin-left: 20px;
+        color: white;
+    }
+    .para1 {
+        font-size: 16px;
+    }
+    .space {
+        font-size: 80px;
+    }
+    .para2 {
+        font-size: 15px;
+        max-width: 290px;
+    }
+    .mainpart2 {
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+}

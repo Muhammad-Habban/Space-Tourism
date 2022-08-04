@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="destinationMars.css">
+
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+    <main>
+        <div class="sideNav" id="sideNav">
+            <div class="close" onclick="closingFuntion()">
+                <img src="./assets/shared/icon-close.svg" alt="Image">
+            </div>
+            <div class="flexpart1 home" onclick="myFunction()">
+                <div class="withinflex1">
+                    00
+                </div>
+                <div class="withinflex2">
+                    Home
+                </div>
+            </div>
+            <div class="flexpart1 destination" onclick="myFunction1()">
+                <div class="withinflex1">
+                    01
+                </div>
+                <div class="withinflex2">
+                    Destination
+                </div>
+            </div>
+            <div class="flexpart1 crew " onclick="myFunction2()">
+                <div class="withinflex1">
+                    02
+                </div>
+                <div class="withinflex2">
+                    Crew
+                </div>
+            </div>
+            <div class="flexpart1 technology" onclick="myFunction3()">
+                <div class="withinflex1">
+                    03
+                </div>
+                <div class="withinflex2">
+                    Technology
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <img src="./assets/shared/logo.svg" alt="Image">
+            </div>
+            <div class="line"></div>
+            <div class="ham" onclick="ham()"><img src="./assets/shared/icon-hamburger.svg" alt="Image"></div>
+            <div class="flex">
+                <div class="flexpart1 home" onclick="myFunction()">
+                    <div class="withinflex1">
+                        00
+                    </div>
+                    <div class="withinflex2">
+                        Home
+                    </div>
+                </div>
+                <div class="flexpart1 destination" onclick="myFunction1()">
+                    <div class="withinflex1">
+                        01
+                    </div>
+                    <div class="withinflex2">
+                        Destination
+                    </div>
+                </div>
+                <div class="flexpart1 crew" onclick="myFunction2()">
+                    <div class="withinflex1">
+                        02
+                    </div>
+                    <div class="withinflex2">
+                        Crew
+                    </div>
+                </div>
+                <div class="flexpart1 technology" onclick="myFunction3()">
+                    <div class="withinflex1">
+                        03
+                    </div>
+                    <div class="withinflex2">
+                        Technology
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="pickDestination"> <span>01 </span> Pick your destination</p>
+        <div class="mainflex">
+            <div>
+                <img src="./assets/destination/image-mars.png" alt="Image" class="moonImage">
+            </div>
+            <div class="mainpart1">
+                <div class="flexTwist">
+                    <div class="mooneh" onclick="mooneh()">Moon</div>
+                    <div class="marseh" onclick="marseh()">Mars</div>
+                    <div class="jupitereh" onclick="jupitereh()">Europa</div>
+                    <div class="titaneh" onclick="titaneh()">Titan</div>
+                </div>
+                <p class="space">
+                    Mars
+                </p>
+                <p class="para2">
+                    Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
+                </p>
+                <hr>
+                <div class="distanceFlex">
+                    <div class="distancePart1">
+                        <p class="distance">Avg. distance</p>
+                        <p class="kilom">225 mil. km </p>
+                    </div>
+                    <div class="distancePart2">
+                        <p class="distance">Est. travel time</p>
+                        <p class="kilom">9 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
